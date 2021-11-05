@@ -29,5 +29,9 @@ namespace HotelManagement.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Accommodations> Accommodations { get; set; }
+        public DbSet<AccomodationType> AccomodationTypes { get; set; }
+        public DbSet<AccommodationPackage> AccommodationPackages { get; set; }
     }
 }
